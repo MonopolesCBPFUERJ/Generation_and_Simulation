@@ -1,0 +1,25 @@
+universe = vanilla
+
+executable = /afs/cern.ch/user/m/matheus/CMSSW_10_6_24/src/MG5_aMC_v2_9_15/submit_mg5_condor.sh
+
+output = output/job.out
+error  = output/job.err
+log    = output/job.log
+
+getenv     = True
+
+environment = "X509_USER_PROXY=/afs/cern.ch/user/m/matheus/x509up_u130329"
+
+requirements = (OpSysAndVer =?= "CentOS7")
+
+request_memory = 16000
+
++JobFlavour = "testmatch"
+
+request_cpus = 8
+transfer_input_files=/afs/cern.ch/user/m/matheus/CMSSW_10_6_24/src/MG5_aMC_v2_9_15/submit_mg5_condor.sh , /afs/cern.ch/user/m/matheus/CMSSW_10_6_24/src/MG5_aMC_v2_9_15/Generation_Monopolo_MG5.py
+
+should_transfer_files = IF_NEEDED
+when_to_transfer_output = ON_EXIT
+
+queue
