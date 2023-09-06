@@ -76,10 +76,10 @@ The shellcode `submit_mg5_condor.sh` is the executable that will be allocated to
 If you want to generate local code, just run it locally using
 
    ```
-   python3 Generation_Monopolo_MG5.py -mass 1000 -events 100 -iterate 10 -process photon_fusion -spin half
+   python3 Generation_Monopolo_MG5.py -mass 1000 -events 100 -itera 10 -process photon_fusion -spin half
 
    -mass 1000 --> Monopole mass
    -events 100 --> How many events do you want to generate
-   -iterate 10 --> Number of times you want to generate the same code
+   -itera 10 --> Number of times you want to generate the same code
    -process photon_fusion --> Which process do you want to run: Drell Yan or Photon Fusion
    -spin half --> Which spin do you want: Spin 0 or Spin 1/2
