@@ -10,15 +10,12 @@
     Navigate to the directory using:
     ```
     cd CMSSW_10_6_24/src
-
 - Download the latest LTS version of MadGraph5 (http://madgraph.phys.ucl.ac.be/):
    ```
    wget https://launchpad.net/mg5amcnlo/lts/2.9.x/+download/MG5_aMC_v2.9.16.tar.gz
-
 - Unzip the file using:
-      ```
-      tar -xzvf MG5_aMC_v2.9.16
-
+  ```
+  tar -xzvf MG5_aMC_v2.9.16
 - Enter the MadGraph5 environment using
      ```
      ./bin/mg5_aMC
@@ -47,10 +44,8 @@ Checks in the MadGraph environment itself that both files are installed using di
    - Tell MadGraph about the lhapdf-config:
 
    - Assuming that the which command returned a path like /home/username/lhapdf/bin/lhapdf-config, you would configure MadGraph5 like this:
-
      ```
      MG5_aMC> set lhapdf /home/username/lhapdf/bin/lhapdf-config
-
    - Replace `/home/username/lhapdf/bin/` with the exact path you got from the which command.
 
    - If you don't have LHAPDF6 installed or if lhapdf-config is not found, you need to install LHAPDF6 or add the directory containing lhapdf-config to your `$PATH`. After following these steps, MadGraph5 should be able to use LHAPDF6 without any problems.
