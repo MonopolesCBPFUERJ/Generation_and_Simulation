@@ -1,0 +1,24 @@
+universe = vanilla
+
+executable = /afs/cern.ch/user/m/matheus/CMSSW_10_6_23/src/submit_steps_gen_sim.sh
+
+output = output/$(ClusterId)_$(ProcId).out
+error  = output/$(ClusterId)_$(ProcId).err
+log    = output/$(ClusterId)_$(ProcId).log
+
+getenv     = True
+
+environment = "X509_USER_PROXY=/afs/cern.ch/user/m/matheus/x509up_u130329"
+
+requirements = (OpSysAndVer =?= "CentOS7")
+
+request_memory = 32000
+
++JobFlavour = "nextweek"
+
+request_cpus = 4
+transfer_input_files=/afs/cern.ch/user/m/matheus/CMSSW_10_6_23/src/submit_steps_gen_sim.sh
+should_transfer_files = IF_NEEDED
+when_to_transfer_output = ON_EXIT
+
+queue arguments from ListFile_condor.txt

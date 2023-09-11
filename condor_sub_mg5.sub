@@ -8,13 +8,11 @@ log    = output/job.log
 
 getenv     = True
 
-environment = "X509_USER_PROXY=/afs/cern.ch/user/m/matheus/x509up_u130329" 
-# ^^^ --> you need found your path, after use the command "voms-proxy-init --rfc --voms cms -valid 192:00", 
-# you to be able see in you prompt "Created proxy in /tmp/x509up_u130329", so please, run the command "echo $HOME/x509up_u130329", copy the path and past above
+environment = "X509_USER_PROXY=/afs/cern.ch/user/m/matheus/x509up_u130329"
 
 requirements = (OpSysAndVer =?= "CentOS7")
 
-request_memory = 16000
+request_memory = 32000
 
 +JobFlavour = "testmatch"
 
