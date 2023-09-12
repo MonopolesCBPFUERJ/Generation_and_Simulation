@@ -51,7 +51,7 @@ Lower limits on the mass of magnetic monopoles and HECOs (in TeV) at 95% confide
 |   PF spin-0      | 3.4       | 3.5       | 2.1      | 2.8      | 2.9      | 2.8      | 2.5       |
 |   PF spin-1/2    | 3.6       | 3.7       | 2.5      | 3.1      | 3.1      | 3.0      | 2.5       |
 |                                                                                                  |
-|                https://arxiv.org/pdf/2308.04835.pdf --> Table 2, pag 13                       |
+|                https://arxiv.org/pdf/2308.04835.pdf --> Table 2, pag 13                          |
 |__________________________________________________________________________________________________|
 '
 
