@@ -16,6 +16,12 @@
 - Unzip the file using:
   ```
   tar -xzvf MG5_aMC_v2.9.16
+
+- Create a virtual machine with python3 to run MadGraph.
+     ```
+     python3 -m venv hepenv
+     . hepenv/bin/activate
+    ```
 - Enter the MadGraph5 environment using
      ```
      ./bin/mg5_aMC
@@ -56,13 +62,6 @@ With MadGraph5 configured, inside the directory execute the commands:
     
      voms-proxy-init --rfc --voms cms -valid 192:00
      cmsenv
-
-Create a virtual machine with python3 to run MadGraph.
-
-    
-     python3 -m venv hepenv
-     . hepenv/bin/activate
-
 
 Now you may be able to run the code for generating the events.
 The `Generation_Monopolo_MG5.py` file is responsible for the entire generation process. On lines 39 and 40 you should change the paths to the absolute path of the madgraph(`MADGRAPH_PATH_RUN`) and the output in your `eos` where the generation will be saved (`OUTPUT_DIR`).
