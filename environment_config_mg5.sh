@@ -33,4 +33,4 @@ fi
 export LHAPDF_DATA_PATH=/afs/cern.ch/user/m/matheus/CMSSW_10_6_22/src/MG5_aMC_v2_9_16/HEPTools/lhapdf6_py3/share/LHAPDF
 
 # 8. Add the export command to ~/.bashrc (You need to modify this path /afs/cern.ch/user/m/matheus/ to your directory)
-echo "export LHAPDF_DATA_PATH=/afs/cern.ch/user/m/matheus/CMSSW_10_6_23/src/MG5_aMC_v2_9_16/HEPTools/lhapdf6_py3/share/LHAPDF" >> ~/.bashrc
+echo "export LHAPDF_DATA_PATH=/afs/cern.ch/user/m/matheus/CMSSW_10_6_22/src/MG5_aMC_v2_9_16/HEPTools/lhapdf6_py3/share/LHAPDF" >> ~/.bashrc
