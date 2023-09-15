@@ -15,7 +15,6 @@ With MadGraph5 configured, inside the directory execute the commands:
 
     
      voms-proxy-init --rfc --voms cms -valid 192:00
-     cmsenv
 
 Now you may be able to run the code for generating the events.
 The `Generation_Monopolo_MG5.py` file is responsible for the entire generation process. On lines 39 and 40 you should change the paths to the absolute path of the madgraph(`MADGRAPH_PATH_RUN`) and the output in your `eos` where the generation will be saved (`OUTPUT_DIR`).
@@ -28,11 +27,75 @@ The shell code `submit_mg5_condor.sh` is the executable that will be allocated t
 
 If you want to generate local code, just run it locally using
 
-   ```
-   python3 Generation_Monopolo_MG5.py -mass 1000 -events 100 -itera 10 -process photon_fusion -spin half
+   
+    python3 Generation_Monopolo_MG5.py -mass 1000 -events 100 -itera 10 -process photon_fusion -spin half
 
-   -mass 1000 --> Monopole mass
-   -events 100 --> How many events do you want to generate
-   -itera 10 --> Number of times you want to generate the same code
-   -process photon_fusion --> Which process do you want to run: Drell Yan or Photon Fusion
-   -spin half --> Which spin do you want: Spin 0 or Spin 1/2
+    -mass 1000 --> Monopole mass
+    -events 100 --> How many events do you want to generate
+    -itera 10 --> Number of times you want to generate the same code
+    -process photon_fusion --> Which process do you want to run: Drell Yan or Photon Fusion
+    -spin half --> Which spin do you want: Spin 0 or Spin 1/2
+
+
+*OBSERVATION:* Remember to change all code directories to yours.
+
+For this analysis we are using recent results obtained by ATLAS on the lower limits of the monopole mass:
+                
+<table>
+    <tr>
+        <th>Process and Spin</th>
+        <th>|g| = 1gD</th>
+        <th>|g| = 2gD</th>
+        <th>|z| = 20</th>
+        <th>|z| = 40</th>
+        <th>|z| = 60</th>
+        <th>|z| = 80</th>
+        <th>|z| = 100</th>
+    </tr>
+    <tr>
+        <td>DY spin-0</td>
+        <td>2.1</td>
+        <td>2.1</td>
+        <td>1.4</td>
+        <td>1.8</td>
+        <td>1.9</td>
+        <td>1.8</td>
+        <td>1.7</td>
+    </tr>
+    <tr>
+        <td>DY spin-1/2</td>
+        <td>2.6</td>
+        <td>2.5</td>
+        <td>1.8</td>
+        <td>2.2</td>
+        <td>2.2</td>
+        <td>2.1</td>
+        <td>1.9</td>
+    </tr>
+    <tr>
+        <td>PF spin-0</td>
+        <td>3.4</td>
+        <td>3.5</td>
+        <td>2.1</td>
+        <td>2.8</td>
+        <td>2.9</td>
+        <td>2.8</td>
+        <td>2.5</td>
+    </tr>
+    <tr>
+        <td>PF spin-1/2</td>
+        <td>3.6</td>
+        <td>3.7</td>
+        <td>2.5</td>
+        <td>3.1</td>
+        <td>3.1</td>
+        <td>3.0</td>
+        <td>2.5</td>
+    </tr>
+    <tr>
+        <td colspan="8"><a href="https://arxiv.org/pdf/2308.04835.pdf">Source: Table 2, pag 13</a></td>
+    </tr>
+</table>
+
+This table shows the first two columns with the value of the monopole's magnetic charge and the last are the HECOs particles charge.
+
