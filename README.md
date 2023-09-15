@@ -93,7 +93,8 @@ For this analysis we are using recent results obtained by ATLAS on the lower lim
         <td>2.5</td>
     </tr>
     <tr>
-        <td colspan="8"><a href="https://arxiv.org/pdf/2308.04835.pdf">Source: Table 2, pag 13</a></td>
+        <td colspan="8"><a href="https://arxiv.org/pdf/2308.04835.pdf">Source: Search for magnetic monopoles and stable particles
+with high electric charges in √𝒔 =13 TeV 𝒑 𝒑 collisions with the ATLAS detector. Table 2, pag 13</a></td>
     </tr>
 </table>
 
