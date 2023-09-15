@@ -100,3 +100,5 @@ with high electric charges in √𝒔 =13 TeV 𝒑 𝒑 collisions with the ATLA
 
 This table shows the first two columns with the value of the monopole's magnetic charge and the last are the HECOs particles charge.
 
+When the condor over, you must have 2000 files. You can count how files you have with these command `find /eos/home-m/matheus/magnetic_monopole_output -maxdepth 1 -type f | wc -l`
+
