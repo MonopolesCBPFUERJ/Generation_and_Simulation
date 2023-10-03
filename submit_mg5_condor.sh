@@ -80,4 +80,4 @@ python3 Generation_Monopolo_MG5.py -mass 2400 -events 10000 -itera 10 -process d
 python3 Generation_Monopolo_MG5.py -mass 2500 -events 10000 -itera 10 -process drell_yan -spin zero
 
 touch ListFile_condor.txt
-find /eos/home-m/matheus/magnetic_monopole_output > /afs/cern.ch/user/m/matheus/CMSSW_10_6_23/src/ListFile_condor.txt
+find /eos/home-m/matheus/magnetic_monopole_output/*.lhe > /afs/cern.ch/user/m/matheus/CMSSW_10_6_23/src/ListFile_condor.txt
