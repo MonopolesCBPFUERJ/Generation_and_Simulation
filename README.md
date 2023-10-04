@@ -104,3 +104,6 @@ When the condor over, you must have 2000 files. You can count how files you have
       
       find /eos/home-m/matheus/magnetic_monopole_output -maxdepth 1 -type f | wc -l
 
+
+## Simulations Steps 
+
