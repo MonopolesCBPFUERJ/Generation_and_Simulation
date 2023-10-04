@@ -1,6 +1,6 @@
 universe = vanilla
 
-executable = /afs/cern.ch/user/m/matheus/CMSSW_10_6_23/src/submit_steps_gen_sim.sh
+executable = /afs/cern.ch/user/m/matheus/CMSSW_10_6_23/src/simulation_steps.sh
 
 output = output/$(ClusterId)_$(ProcId).out
 error  = output/$(ClusterId)_$(ProcId).err
@@ -17,8 +17,8 @@ request_memory = 32000
 +JobFlavour = "nextweek"
 
 request_cpus = 4
-transfer_input_files=/afs/cern.ch/user/m/matheus/CMSSW_10_6_23/src/submit_steps_gen_sim.sh
+transfer_input_files=/afs/cern.ch/user/m/matheus/CMSSW_10_6_23/src/simulation_steps.sh, /afs/cern.ch/user/m/matheus/CMSSW_10_6_23/src/gensim_digi_step.py, /afs/cern.ch/user/m/matheus/CMSSW_10_6_23/src/reco_step.py, /afs/cern.ch/user/m/matheus/CMSSW_10_2_16_UL/src/hlt_step.py
 should_transfer_files = IF_NEEDED
 when_to_transfer_output = ON_EXIT
 
-queue arguments from ListFile_condor.txt
+queue arguments from /afs/cern.ch/user/m/matheus/CMSSW_10_6_23/src/ListFile_condor.txt
