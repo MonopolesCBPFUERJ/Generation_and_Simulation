@@ -55,11 +55,13 @@ Lower limits on the mass of magnetic monopoles and HECOs (in TeV) at 95% confide
 |__________________________________________________________________________________________________|
 '
 
-python3 Generation_Monopolo_MG5.py -mass 3600 -events 10000 -itera 10 -process photon_fusion -spin half
-python3 Generation_Monopolo_MG5.py -mass 3700 -events 10000 -itera 10 -process photon_fusion -spin half
-python3 Generation_Monopolo_MG5.py -mass 3800 -events 10000 -itera 10 -process photon_fusion -spin half
-python3 Generation_Monopolo_MG5.py -mass 3900 -events 10000 -itera 10 -process photon_fusion -spin half
-python3 Generation_Monopolo_MG5.py -mass 4000 -events 10000 -itera 10 -process photon_fusion -spin half
+python3 Generation_Monopolo_MG5.py -mass 3600 -events 500 -itera 200 -process photon_fusion -spin half
+python3 Generation_Monopolo_MG5.py -mass 3700 -events 500 -itera 200 -process photon_fusion -spin half
+python3 Generation_Monopolo_MG5.py -mass 3800 -events 500 -itera 200 -process photon_fusion -spin half
+python3 Generation_Monopolo_MG5.py -mass 3900 -events 500 -itera 200 -process photon_fusion -spin half
+python3 Generation_Monopolo_MG5.py -mass 4000 -events 500 -itera 200 -process photon_fusion -spin half
+python3 Generation_Monopolo_MG5.py -mass 4100 -events 500 -itera 200 -process photon_fusion -spin half
+python3 Generation_Monopolo_MG5.py -mass 4200 -events 500 -itera 200 -process photon_fusion -spin half
 
 python3 Generation_Monopolo_MG5.py -mass 3400  -events 10000 -itera 10 -process photon_fusion -spin zero
 python3 Generation_Monopolo_MG5.py -mass 3500  -events 10000 -itera 10 -process photon_fusion -spin zero
