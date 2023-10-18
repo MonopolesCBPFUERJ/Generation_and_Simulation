@@ -51,7 +51,7 @@ def run_pipeline(input_file):
     "--step", "NONE",
     "--python_filename", lhe_python_file,
     "--no_exec",
-    "-n", "1000",
+    "-n", "-1",
     "--customise_commands", "process.source.firstLuminosityBlock = cms.untracked.uint32(3)"
     ]   
     
