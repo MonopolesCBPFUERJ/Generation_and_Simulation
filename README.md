@@ -9,13 +9,8 @@ Edit this script fallowing the steps:
 * Run this code with `./environment_config_mg5.sh`
 * Open the new terminal
 * Enter inside the CMSSW release that you create, for exemple `cd CMSSW_10_6_22/src/MG5_aMC_v2_9_16`
-* Run this command to have acess the python 3.8 `source /afs/cern.ch/work/g/gcorreia/public/hepenv_setup.sh`
+* Run this command to have acess the python 3.8 `source /afs/cern.ch/user/m/matheus/public/hepenv_setup.sh`
    
-With MadGraph5 configured, inside the directory execute the commands:
-
-    
-     voms-proxy-init --rfc --voms cms -valid 192:00
-
 Now you may be able to run the code for generating the events.
 The `Generation_Monopolo_MG5.py` file is responsible for the entire generation process. On lines 39 and 40 you should change the paths to the absolute path of the madgraph(`MADGRAPH_PATH_RUN`) and the output in your `eos` where the generation will be saved (`OUTPUT_DIR`).
 
