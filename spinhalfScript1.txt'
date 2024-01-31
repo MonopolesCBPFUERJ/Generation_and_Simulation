@@ -1,0 +1,4 @@
+set auto_convert_model T
+import model mono_spinhalf
+generate a a > mm+ mm- 
+output Pre5 
